@@ -1,0 +1,140 @@
+field: 02d4fede-34e7-489f-a068-098fff61d3f4 # Hosts
+fieldLayouts:
+  f4721e49-e40e-49bc-b8e1-6ff21cc90044:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 0bc68818-feb9-4a74-847c-bbd10558ec6b # Photo
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d28742b9-ce76-42c5-929a-ed3a85e08589
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e2227714-9d82-435d-9254-7f0e6074a9fb # Full Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0cc5c33e-882e-46ff-8852-365e1cb3d14a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0e70c34e-df5f-4073-8daa-9341bf93dc4b # Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 611a42b1-580b-4cb2-8547-6b7b8a583b8e
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 422ecee8-9bab-4571-b577-c7681f4e518d
+        userCondition: null
+fields:
+  0bc68818-feb9-4a74-847c-bbd10558ec6b: # Photo
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: photo
+    instructions: null
+    name: Photo
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:57f8ecd8-41c8-4f45-847d-034641181daf' # Uploads
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: null
+      previewMode: full
+      restrictFiles: true
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:57f8ecd8-41c8-4f45-847d-034641181daf' # Uploads
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: 'Add a photo'
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources:
+        - 'volume:57f8ecd8-41c8-4f45-847d-034641181daf' # Uploads
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  0e70c34e-df5f-4073-8daa-9341bf93dc4b: # Description
+    columnSuffix: mcwztqav
+    contentColumnType: text
+    fieldGroup: null
+    handle: description
+    instructions: null
+    name: Description
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: true
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  e2227714-9d82-435d-9254-7f0e6074a9fb: # Full Name
+    columnSuffix: gnpxxebm
+    contentColumnType: text
+    fieldGroup: null
+    handle: fullName
+    instructions: null
+    name: 'Full Name'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 1
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: host
+name: Host
+sortOrder: 1

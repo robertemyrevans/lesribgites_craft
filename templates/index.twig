@@ -47,22 +47,22 @@
     <section class="section section--more-padding section--light section--angled-top">
       <div class="content-column centered">
 
-        <h2>Your Hosts</h2>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-        
+       
+
+      {{ entry.hostsIntroContent }}
+
         <div class="flex-columns">
+          {% for host in entry.hosts.all() %}
+            {% set photo = host.photo.one() %}
+            <div class="flex-columns__item">
+              {% set photo = host.photo.one() %}
+              <img src="{{ photo.url }}" alt="host.fullName" class="flex-columns__image">
+              <h4>{{ host.fullName }}</h4>
+              <p>{{ host.description }}</p>
+            </div>
+          {% endfor %}
 
-          <div class="flex-columns__item">
-            <img src="{{ siteUrl }}static/images/photos/henry-potter.jpg" alt="Henry Potter" class="flex-columns__image">
-            <h4>John Lamb</h4>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
-          </div>
 
-          <div class="flex-columns__item">
-            <img src="{{ siteUrl }}static/images/photos/sarah-bradbury.jpg" alt="Sarah Bradbury" class="flex-columns__image">
-            <h4>Dot Lamb</h4>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
-          </div>
 
           
         </div>

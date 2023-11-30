@@ -54,8 +54,38 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-        name: Content
+        name: 'Front Page'
         uid: af403fff-fa2c-4a0a-8a3e-e83190de5703
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 7dad4d3a-8dd9-482a-acd2-59093cf10f5a # Hosts Intro Content
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c7ead546-a29e-4b26-b0c1-fe9a8dbc9e24
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 02d4fede-34e7-489f-a068-098fff61d3f4 # Hosts
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 24748659-a039-4411-a006-a61bcf27ca7c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Hosts
+        uid: c83ba8ad-21d1-4494-905f-462f32981eee
         userCondition: null
 handle: home
 hasTitleField: false

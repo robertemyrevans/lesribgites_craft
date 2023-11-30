@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: b8685538-b0d5-4bc2-aa61-a3aa1366f5b6 # Home Page
+handle: hosts
+instructions: null
+name: Hosts
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_hosts}}'
+  maxBlocks: null
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix
