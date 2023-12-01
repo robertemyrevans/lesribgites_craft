@@ -1,0 +1,46 @@
+fieldLayouts:
+  a2a71cd9-d62f-42bd-8616-6dedef337d2d:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: f5bc6734-2f19-4a7f-9e78-a715eb6e79bd
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 6c0322b8-7746-448a-8649-523174dafd51
+        userCondition: null
+handle: gitesListing
+hasTitleField: true
+name: 'Gites Listing'
+section: 6f21c0d5-64da-4039-b930-1e4257ef92c7 # Gites Listing
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

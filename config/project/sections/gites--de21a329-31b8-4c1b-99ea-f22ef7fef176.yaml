@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: gites
+name: Gites
+propagationMethod: all
+siteSettings:
+  0e10cfc2-d5c2-4900-bbdb-75f39e2608b8: # Les Ribaudieres
+    enabledByDefault: true
+    hasUrls: true
+    template: gites/_entry
+    uriFormat: 'gites/{slug}'
+type: channel

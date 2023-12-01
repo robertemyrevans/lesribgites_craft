@@ -1,0 +1,39 @@
+{% extends 'index' %}
+
+{% block content %}
+
+    {% set gites = craft.entries.section('gites').all() %}
+
+        <section class="section">
+        <div class="content-column">
+
+            <h1 class="centered">{{ entry.title }}</h1>
+            
+            <div class="two-columns">
+            {% for gite in gites %} 
+                {% set photo = gite.photos.one() %}
+
+                <div class="two-columns__item">
+                    
+                    <div class="two-columns__content">
+                    <h2>{{ gite.title }}</h2>
+                    <p>{{ gite.shortDescription }}</p>
+                    <p>
+                        <a href="{{ gite.url }}" class="cta-link">Find out more</a>
+                    </p>
+                    </div>
+
+                    <div class="two-columns__image">
+                    <img src="{{ photo.url }}" alt="{{ photo.title }}">
+                    </div>
+                    
+                </div>
+
+                    
+                </div>
+            {% endfor %}
+            
+        </div>
+        </section>
+        
+{% endblock %}

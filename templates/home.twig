@@ -12,48 +12,66 @@
       </div>
     </section>
 
-    <section class="featured-story">
-      <div class="featured-story__flex content-column">
+    {% set featured = entry.featuredStories.all() %}
 
-        <div class="featured-story__content">
+    {% for feature in featured %}
 
-          <h2>Exporing Peru by Motorbike</h2>
-          
-          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
 
-          <p>
-            <a href="./story.html" class="cta-link">Discover the full story</a>
-          </p>
-          
-        </div>
+        <section class="featured-story">
+              <div class="featured-story__flex content-column">
 
-        <div class="featured-story__slider">
-          
-          <!-- Slider Component -->
-          <div class="slider">
+                <div class="featured-story__content">
 
-            <div class="slider__nav">
-              <button type="button" class="slider__prev">
-                <img src="{{ siteUrl }}static/images/arrow-prev.svg" alt="Previous">
-              </button>
-              <button type="button" class="slider__next">
-                <img src="{{ siteUrl }}static/images/arrow-next.svg" alt="Next">
-              </button>
+                  <h2>{{ feature.title  }}</h2>
+                  
+                  <p>{{ feature.shortDescription  }}</p>
+
+                  <p>
+                    <a href="{{ siteUrl }}stories" class="cta-link">Find out more</a>
+                  </p>
+                  
+                </div>
+                
+                <div class="featured-story__slider">
+                  {% include "components/slider" with {
+                      photos : feature.photos.all()
+                  }  %}
+
+
+                </div>
+
+
+              </div>
+            </section>
+
+    {% endfor %}
+
+
+
+    <section class="section section--more-padding section--light section--angled-top">
+      <div class="content-column centered">
+
+       
+
+      {{ entry.hostsIntroContent }}
+
+        <div class="flex-columns">
+          {% for host in entry.hosts.all() %}
+            {% set photo = host.photo.one() %}
+            <div class="flex-columns__item">
+              {% set photo = host.photo.one() %}
+              <img src="{{ photo.url }}" alt="host.fullName" class="flex-columns__image">
+              <h4>{{ host.fullName }}</h4>
+              <p>{{ host.description }}</p>
             </div>
-            
-            <div class="slider__reel">
-              <img src="{{ siteUrl }}static/images/photos/mohit-suthar-a1_tFcBSp7w-unsplash.jpg" alt="Ridge" class="slider__image">
-              <img src="{{ siteUrl }}static/images/photos/mountains.jpg" alt="Mountains" class="slider__image">
-              <img src="{{ siteUrl }}static/images/photos/photo-1606293715325-9329879fec0f.jpg" alt="Jungle" class="slider__image">
-              <img src="{{ siteUrl }}static/images/photos/jeremy-bishop-hMHJYQlWQwU-unsplash.jpg" alt="Scrambler" class="slider__image">
-            </div>
-            
-          </div>
+          {% endfor %}
 
+
+
+          
         </div>
         
       </div>
     </section>
-
 
 {% endblock %}

@@ -62,6 +62,24 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
+            fieldUid: dac413e9-280c-4d5a-b8c9-6b002a7911d0 # Featured Stories
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 673ae16a-0a3f-48f9-b1f1-8b943431549d
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Featured Story'
+        uid: 43c73cf7-29d3-4654-b3b1-6dd9d71178e6
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
             fieldUid: 7dad4d3a-8dd9-482a-acd2-59093cf10f5a # Hosts Intro Content
             instructions: null
             label: null
