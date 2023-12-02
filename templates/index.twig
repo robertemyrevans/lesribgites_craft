@@ -32,8 +32,11 @@
         </button>
         
         <nav class="nav">
-          <a href="{{ siteUrl }}gites" class="nav__link">Our Gites</a>
-          <a href="{{ siteUrl }}stories" class="nav__link">About</a>
+          {% for link in header.navLinks.all() %}
+            {% set destination = link.linkDescription.one() %}
+            {% set activeLink = craft.app.request.segments|first == destination.uri %}
+            <a href="{{ destination.url }}" class="nav__link {% if activeLink %}nav__link--active{% endif %}">{{ link.linkText }}</a>
+          {% endfor %}
         </nav>
         
       </div>
@@ -50,7 +53,7 @@
   <footer class="footer">
     <div class="content-column centered">
 
-      <p>Copyright Robbie Evans. All rights reserved.</p>
+      {{ footer.richText }}
       
     </div>
   </footer>

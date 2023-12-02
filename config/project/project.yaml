@@ -1,4 +1,4 @@
-dateModified: 1701453385
+dateModified: 1701559919
 email:
   fromEmail: evansrobbie@hotmail.com
   fromName: 'Les Ribaudieres'
@@ -14,6 +14,7 @@ fs:
 meta:
   __names__:
     0bc68818-feb9-4a74-847c-bbd10558ec6b: Photo # Photo
+    0e0c71de-66aa-4d95-a0b1-8fb983deb359: 'Nav Links' # Nav Links
     0e10cfc2-d5c2-4900-bbdb-75f39e2608b8: 'Les Ribaudieres' # Les Ribaudieres
     0e70c34e-df5f-4073-8daa-9341bf93dc4b: Description # Description
     2af77a0e-c311-453f-804c-3bfe50334e43: Default # Default
@@ -22,21 +23,25 @@ meta:
     4be743ac-7093-4d42-9614-856eaf7f590c: About # About
     6f21c0d5-64da-4039-b930-1e4257ef92c7: 'Gites Listing' # Gites Listing
     7d7efc4d-b657-47dc-bb2f-49ec951b8cf0: Home # Home
+    7da82158-e7df-45aa-aab3-8fe93dc60227: Link # Link
     7dad4d3a-8dd9-482a-acd2-59093cf10f5a: 'Hosts Intro Content' # Hosts Intro Content
     8edb13a2-4a4c-417c-ba9a-7ffbcc94195c: 'Hero Image' # Hero Image
+    22dd3771-0c49-430a-b1b3-e07cf957c266: 'Link Description' # Link Description
     57f8ecd8-41c8-4f45-847d-034641181daf: Uploads # Uploads
     63f18369-4d51-4417-9fa2-11e0b810b8c7: 'Hero Title' # Hero Title
     71c70725-e612-4a3b-87f5-50b7981e541e: 'Gites Listing' # Gites Listing
     167d0a47-343f-44ab-ad52-c7f203db8566: 'Short Description' # Short Description
     324c937c-d901-4d2f-8ff3-8018da277bf2: 'Rich Text' # Rich Text
+    645f60bf-53cd-40e5-ad2e-ab297a286885: Footer # Footer
     9174bbc0-ef2f-4c1f-9502-4c2a81d5b195: 'Featured Gites' # Featured Gites
+    31695d03-c374-4f0b-9f87-e4759f29c916: 'Link Text' # Link Text
     93346635-bc62-4b56-9331-38c29a93a7a7: Host # Host
     a5a5c10a-f88b-4bca-80e4-679840f3f4f0: Stories # Stories
+    a8481ab0-d892-4c82-b8d4-4454049553dd: Header # Header
     b206cbb9-bb04-4392-8e2c-fee9d6957888: About # About
     b8685538-b0d5-4bc2-aa61-a3aa1366f5b6: 'Home Page' # Home Page
     bb9472f9-df47-42c5-9780-a6c1c9eadfe5: Default # Default
     c083ea54-186e-450f-b8df-71ef7151bfc8: Home # Home
-    c99a87f6-94fa-4bc3-a183-67ed88b6b817: TestGlobal # TestGlobal
     cf75817a-23a3-4bc1-adc2-0bf788fe83b0: Photos # Photos
     d05cf254-a524-4b2a-b115-e07ee82ae3d2: 'Les Ribaudieres' # Les Ribaudieres
     dac413e9-280c-4d5a-b8c9-6b002a7911d0: 'Featured Stories' # Featured Stories
